@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý thông tin xe</title>
+<link rel="stylesheet" href="quanli.css">
+<script src="manager.js" defer></script>
+</head>
+<body>
+    <h1 class="h1">Quản lý thông tin xe</h1>
+    <p class="p1"><a href="dki.html">Đăng ký tài khoản</a></p>
+<!--Nhập thông tin xe-->
+    <div class="form-container">
+        <h2>Thêm thông tin xe</h2>
+        <div class="form-group">
+            <label for="model">Tên xe:</label>
+            <input type="text" id="model" placeholder="Nhập tên xe">
+        </div>
+        <div class="form-group">
+            <label for="price">Giá tiền:</label>
+            <input type="number" id="price" placeholder="Nhập giá tiền">
+        </div>
+        <!--Thêm các dòng xe trong hãng-->
+        <div class="form-group">
+            <label for="vehicle type">Dòng xe:</label>
+            <input type="number" id="vehicle type" placeholder="Nhập loại xe">
+            <select id="type">
+                <option value="Rolls-Royce Cullinan">Rolls-Royce Cullinan</option>
+                <option value="Rolls-Royce Ghost">Rolls-Royce Ghost</option>
+                <option value="Rolls-Royce Phantom">Rolls-Royce Phantom</option>
+                <option value="Rolls-Royce Wraith">Rolls-Royce Wraith</option>
+                <option value="Rolls-Royce Dawn">Rolls-Royce Dawn</option>
+            </select>
+        </div>
+        <!--Thêm màu xe -->
+        <div class="form-group">
+            <label for="color">Màu sắc:</label>
+            <input type="text" id="color" placeholder="Nhập màu sắc">
+            <select name="type" id="color"> 
+            <option value="red">Đỏ</option>
+            <option value="Yellow">Vàng</option>
+            <option value="pink">Hồng</option>
+            <option value="black">Đen</option>
+            <option value="gold">Gold</option>
+            <option value="purple">Purple</option>
+        </select>
+            
+        </div>
+        <button onclick="addCar()">Thêm xe</button>
+      
+    </div>
+
+    <h2>Danh sách xe</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Tên xe</th>
+                <th>Giá tiền</th>
+                <th>Dòng xe</th>
+                <th>Màu sắc</th>
+            </tr>
+        </thead>
+        <tbody id="car-list">
+            <!-- Dữ liệu xe được nhập sẽ được hiển thị ở đây -->
+        </tbody>
+    </table>
+
+   
+</body>
+</html>

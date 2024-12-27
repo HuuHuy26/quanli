@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký tài khoản</title>
+    <link rel="stylesheet" href="dki.css">
+    <script src="dkii.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Đăng ký tài khoản</h2>
+        <form>
+            <!-- Tên đăng nhập -->
+            <div class="input-field">
+                <input type="text" id="username" name="username" required>
+                <label for="username">Tên đăng nhập</label>
+            </div>
+
+            <!-- Email -->
+            <div class="input-field">
+                <input type="email" id="email" name="email" required>
+                <label for="email">Email</label>
+            </div>
+
+            <!-- Mật khẩu -->
+            <div class="input-field">
+                <input type="password" id="password" name="password" required>
+                <label for="password">Mật khẩu</label>
+            </div>
+
+            <!-- Quên mật khẩu -->
+            <div class="forget">
+                <label>
+                    <input type="checkbox" id="remember">
+                    <p>Ghi nhớ</p>
+                </label>
+                <a href="#">Quên mật khẩu?</a>
+            </div>
+
+            <!-- Nút bấm đăng ký -->
+            <button type="submit">Đăng ký</button>
+        </form>
+
+        <!-- Chuyển đến trang đăng nhập -->
+        <div class="register">
+            <p>Bạn đã có tài khoản? <a href="#">Đăng nhập ngay</a></p>
+        </div>
+    </div>
+</body>
+</html>
